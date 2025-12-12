@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokulakrishnan Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            background: #0e0e0e;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .left {
+            max-width: 50%;
+            animation: fadeInLeft 1.5s ease;
+        }
+
+        .left h1 {
+            font-size: 50px;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .left p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            border-radius: 8px;
+            background: #00d0ff;
+            color: black;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Animation */
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <!-- LEFT SIDE -->
+        <div class="left">
+            <h1>
+                Hi, I'm <span style="color:#00eaff;">Gokulakrishnan N</span>
+            </h1>
+
+            <p>Student at PSG College of Technology</p>
+            <p><b>BE Robotics and Automation</b></p>
+            <p>Skills: Python, C, C++, 3D Printing, Drone Pilot</p>
+            <p>Projects: 2 completed</p>
+            <p>Email: <b style="color:#00eaff;">gokulakrishnan@gmail.com</b></p>
+
+            <!-- WORKING RESUME BUTTON -->
+            <a class="btn" href="idea_pocc.pdf" download>Download Resume</a>
+        </div>
+
+        <!-- RIGHT SIDE ANIMATION (NO ALT TEXT) -->
+        <lottie-player 
+            src="https://assets9.lottiefiles.com/packages/lf20_jcikwtux.json"
+            background="transparent"
+            speed="1"
+            style="width: 450px; height: 450px; filter: brightness(1.45) contrast(1.3) drop-shadow(0 0 30px #00eaff);"
+            loop
+            autoplay>
+        </lottie-player>
+
+    </div>
+
+    <!-- Lottie Script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+</html>
